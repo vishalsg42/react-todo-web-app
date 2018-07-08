@@ -1,11 +1,12 @@
-import React, { Component } from "react";
+import React  from "react";
 import './styles/style.css';
 
 const TodoInput = (props)=>{
     return <input 
               type={props.type} 
               placeholder={props.placeholder} 
-              defaultValue={props.value} 
+              onKeyUp={props.eventHandler}
+              defaultValue={props.textValue}
             />
 }
 export default TodoInput;
