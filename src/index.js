@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Todo from './ToDo';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Todo />, document.getElementById('root'));
+// Routes
+import Routes from './Routes/index';
+
+// Redux
+import { Provider  } from "react-redux";
+import store   from './Reducers/index';
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Routes />
+    </Provider>
+    , document.getElementById('root'));
 registerServiceWorker();
