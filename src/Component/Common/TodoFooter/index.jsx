@@ -10,7 +10,7 @@ class TodoFooter extends Component {
   render() {
     return (
       <footer>
-        <span className='todo-count'>5</span>
+        <span className='todo-count'>5 item left</span>
         <ul className='filters'>
           <li><a href="#">All</a></li>
           <li><a href="#">Active</a></li>

@@ -10,17 +10,20 @@ class TodoContainer extends Component {
   
   render() {
     return (
+
       <div >
-          <h1>todos</h1>
-        <TodoForm className='todoapp'>
-          <TodoInput 
-            type={'text'}
-            placeholder={'whats need to be done ?'}
-            value='todo'
-          />
-        </TodoForm>
-        <TodoFooter />
-      </div>
+            <h1>todos</h1>
+        <div className='todoapp'>
+          <TodoForm >
+            <TodoInput 
+              type={'text'}
+              placeholder={'whats need to be done ?'}
+              value='todo'
+            />
+          </TodoForm>
+          <TodoFooter />
+          </div>
+        </div>
     )
   }
 }
