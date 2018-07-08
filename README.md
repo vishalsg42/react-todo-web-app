@@ -1,1 +1,1 @@
-# ToD0 Web App With Redux, Route & Actions
+# ToDo Web App With Redux, Route & Actions
